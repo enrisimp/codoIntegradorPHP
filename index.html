@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav id="barra" class="navbar navbar-expand-lg bg-dark">
             <div class="container">
                 <a class="navbar-brand dark text-white" href="#">
                     <img src="img/codoacodo.png" alt="codoacodo" height="55">Conf Bs As </a>
@@ -32,28 +32,28 @@
                             <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#"> Los oradores</a>
+                            <a class="nav-link text-secondary" href="#oradores"> Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#">El lugar y la fecha</a>
+                            <a class="nav-link text-secondary" href="#lugar">El lugar y la fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary">Conviertete en orador</a>
+                            <a class="nav-link text-secondary" href="#conviertete">Conviertete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-success">Comprar tickets</a>
+                            <a class="nav-link text-success" href="comprar_tickets.html">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
         </nav>
-        <div class="bg-image" style="background: url('img/ba1.jpg');  
+        <div id="fondo" class="bg-image" style="background: url('img/ba1.jpg');  
             height: 100vh;background-size:cover;" class="d-flex flex-end">
             <div class="mask d-flex justify-content-end" style="background-color: rgba(0, 0, 0, 0.7);height: 100vh;background-size:cover;" >
                 <div class="col-4 text-end d-flex align-items-space-around flex-column justify-content-center h-100 text-white" style="margin-right:10%;">
                     
-                    <h1 class="text-white mb-0">
+                    <h1 class="text-white mb-1">
                         Conf Bs As</h1>
                     
                     <p>Bs As llega por primera vez a Argentina. Un evento para compartir con
@@ -63,7 +63,7 @@
                         nivel que tenemos para ti. Te esperamos!</p>
                         <div>
                             <button class="btn btn-outline-light">Quiero ser orador</button>
-                            <button class="btn btn-success">Comprar tickets</button>
+                            <a class="button btn btn-success" href="comprar_tickets.html">Comprar tickets</a>
                         </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
 
     </header>
 
-    <main class="container col-9 mt-5">
+    <main class="container col-9 mt-5" id="oradores">
                     <div class="text-center">
                         <p class="text-center">CONOCE A LOS
                         <h2 class="text-center">ORADORES</h2>
@@ -127,12 +127,12 @@
             </div>
         </div>
     </main>
-    <section class="mt-5">
-        <div class="row">
-            <div class="col border border-white">
+    <section class="mt-5" id="lugar">
+        <div class="row g-0">
+            <div class="col border border-white m-0">
                 <img src="img/honolulu.jpg" alt="PlayaHonolulu" class="img-fluid">
             </div>
-            <div class="col bg-dark text-white border border-white d-inline">
+            <div class="col bg-dark text-white border border-white d-inline p-3">
                 <h5 class="card-title ">Bs As - Octubre</h5>
                 <p class="card-text">
                     Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la
@@ -142,7 +142,7 @@
                 <a href="#" class="btn btn-outline-light ">Conocé más</a>
             </div>
     </section>
-    <section class="row d-flex justify-content-center mt-5" >
+    <section class="row d-flex justify-content-center mt-5" id="conviertete" >
         <div class="col-6 justify-content-center">
             <div class="text-center">
                 <p class="text-center">CONVIÉRTETE EN UN
@@ -168,7 +168,7 @@
             </form>
         </div>
     </section>
-    <footer class="bg-dark text-center text-white mt-5">
+    <footer class="bg-dark text-center text-white mt-5 py-3">
         <div class="d-flex justify-content-around">
             <nav class="nav justify-content-center flex-lg-row">
                 <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
